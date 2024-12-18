@@ -1,0 +1,89 @@
+[
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getSkills",
+      "outputs": [
+        {
+          "components": [
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "name": "certificateHash",
+              "type": "string"
+            },
+            {
+              "name": "dateIssued",
+              "type": "uint256"
+            }
+          ],
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_name",
+          "type": "string"
+        },
+        {
+          "name": "_description",
+          "type": "string"
+        },
+        {
+          "name": "_certificateHash",
+          "type": "string"
+        }
+      ],
+      "name": "addSkill",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "skillName",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "name": "certificateHash",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "name": "dateIssued",
+          "type": "uint256"
+        }
+      ],
+      "name": "SkillVerified",
+      "type": "event"
+    }
+  ]
+  
