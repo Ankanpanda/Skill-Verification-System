@@ -7,7 +7,7 @@ import SkillForm from "./components/SkillForm";
 const web3 = new Web3(window.ethereum || "http://localhost:8545");
 
 // Contract Address (Replace with your deployed contract address)
-const contractAddress = "0xb07d7632462964223B1389B862691B2a9d566311";
+const contractAddress = " "; // CONTRACT ADDRESS - DEPLOYED
 const contract = new web3.eth.Contract(SkillVerificationABI, contractAddress);
 
 function App() {

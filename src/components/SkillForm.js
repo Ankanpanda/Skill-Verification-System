@@ -9,9 +9,8 @@ const SkillForm = ({ handleAddSkill }) => {
   const [uploading, setUploading] = useState(false);
 
   // Pinata API credentials (ensure these are secured in a backend for production)
-  const PINATA_API_KEY = "760f0d41bd22f9f471b1";
-  const PINATA_API_SECRET =
-    "dba57a5c03690d057eef29b3326e84c7a714051f5ac3dba2719f490db623a923";
+  const PINATA_API_KEY = " "; // PINATA API KEY
+  const PINATA_API_SECRET = " "; // PINATA API SECRET KEY
 
   const handleFileChange = (e) => {
     const file = e.target.files[0];
